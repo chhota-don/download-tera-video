@@ -15,7 +15,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text.strip()
-    if "terabox" not in url:
+    if "terasharelink" not in url:
         await update.message.reply_text("Please send a valid Terabox link.")
         return
 
